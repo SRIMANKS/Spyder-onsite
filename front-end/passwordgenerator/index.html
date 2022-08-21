@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>PASSWORD generator </header>
 <div class="main">
-    <input type="text" value = "">
+    <input type="text" value = ""  class="input">
+    <select name="type" id="option"  class="input">
+        <option value="uc">uppercase</option>
+        <option value="lc">lowercase</option>
+        <option value="n">number</option>
+        <option value="s">mixed</option>
+    </select>
+    <input class="input" type="number" id="length" placeholder="enter size of password">
     <button>Generate</button>
 </div>
 <script src="script.js"></script>

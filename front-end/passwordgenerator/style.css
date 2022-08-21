@@ -1,0 +1,38 @@
+body{
+
+    color:beige;
+    margin: 0px;
+    font-size: 2em;
+    background: linear-gradient(45deg,  yellow,red);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+}
+.main{
+    width: min(500px,90vw);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.input{
+    width: 100%;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 1em;
+}
+button{
+    width: 100%;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: crimson;
+    color: white;
+}
