@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Miny Url</header>
+    <form action="/short" method="post">
+        <input type="text" name="longUrl" placeholder="Enter url to short " required>
+        <button type="submit">Shorten</button>
+    </form>
+</body>
+</html>
+
+<style>
+    body{
+        border: 0px;
+        margin: 0px;
+        background-color: #B4D2BA;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    header{
+        font-size: 10em;
+        color:black;
+    }
+    form{
+        border-radius: 20px;
+        margin-top: 5em;
+        background-color: #dcffce;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: min(500px, 90vw);
+        height: 300px;
+    }
+    input{
+        width: 90%;
+        font-size: 1.5em;
+        border-radius: none;
+        background-color: #FFFFFF;
+        color: black;
+    }
+    button{
+        width: 90%;
+        font-size: 1.5em;
+        padding: 0.5em 1em;
+        border-radius: none;
+        background-color: crimson;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    button:hover{
+        transform: scale(1.03);
+    }
+</style>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>List of urls shortened </header>
+    <div class="container">
+        <div class="longurl">Long-url</div>
+        <div class="miniurl">Mini-url</div>
+        <% for(var i = 0; i < urls.length; i++){ %>
+            <div class="longurl"><%= urls[i].longUrl %></div>
+            <div class="miniurl">localhost:3000/<%= urls[i].shortUrl %></div>
+        <% } %>
+        </div>
+</body>
+</html>
+
+<style>
+    body{
+        border: 0px;
+        margin: 0px;
+        background-color: #B4D2BA;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    div.container{
+        font-size: 2em;
+        display:grid;
+        width: min(800px,95vw);
+        grid-template-columns: 1fr 1fr;
+    }
+    .container div{
+        border-bottom: 1px solid black;
+        padding: 0.5em;
+    }
+</style>
